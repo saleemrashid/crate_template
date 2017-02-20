@@ -1,6 +1,7 @@
 # `{{name}}`
 
 [![crates.io](https://img.shields.io/crates/v/{{name}}.svg)](https://crates.io/crates/{{name}})
+[![Travis CI](https://img.shields.io/travis/saleemrashid/{{name}}.rs)](https://travis-ci.org/saleemrashid/{{name}}.rs)
 
 # License
 
