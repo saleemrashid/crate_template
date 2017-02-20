@@ -1,0 +1,14 @@
+[package]
+name = "{{name}}"
+version = "0.1.0"
+authors = ["{{author}}"]
+
+repository = "https://github.com/saleemrashid/{{name}}.rs"
+
+license = "MIT/Apache-2.0"
+readme = "README.md"
+
+description = """
+"""
+
+[dependencies]
