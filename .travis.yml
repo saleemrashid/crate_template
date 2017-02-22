@@ -1,5 +1,4 @@
 language: rust
-cache: cargo
 sudo: false
 
 rust:
@@ -12,6 +11,13 @@ matrix:
     allow_failures:
         - rust: stable
         - rust: beta
+
+    include:
+        - rust: nightly
+          before_install:
+              - cargo install rustfmt
+          script:
+              - cargo fmt -- --write-mode=diff
 
 script:
     - cargo build --verbose
