@@ -1,4 +1,5 @@
 language: rust
+cache: cargo
 sudo: false
 
 rust:
@@ -9,8 +10,8 @@ rust:
 matrix:
     fast_finish: true
     allow_failures:
-        - stable
-        - beta
+        - rust: stable
+        - rust: beta
 
 script:
     - cargo build --verbose
