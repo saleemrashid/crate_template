@@ -1,19 +1,23 @@
 language: rust
 sudo: false
 
+os:
+    - linux
+    - osx
+
 rust:
     - nightly
     - stable
-    - beta
 
 matrix:
     fast_finish: true
     allow_failures:
+        - os: osx
         - rust: stable
-        - rust: beta
 
     include:
         - rust: nightly
+          os: linux
           before_install:
               - cargo install rustfmt
           script:
