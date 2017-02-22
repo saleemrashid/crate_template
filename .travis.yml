@@ -1,10 +1,6 @@
 language: rust
 sudo: false
 
-os:
-    - linux
-    - osx
-
 rust:
     - nightly
     - stable
@@ -12,12 +8,10 @@ rust:
 matrix:
     fast_finish: true
     allow_failures:
-        - os: osx
         - rust: stable
 
     include:
         - rust: nightly
-          os: linux
           before_install:
               - cargo install rustfmt
           script:
