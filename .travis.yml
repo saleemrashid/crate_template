@@ -13,7 +13,7 @@ matrix:
     include:
         - rust: nightly
           before_install:
-              - cargo install rustfmt
+              - cargo install rustfmt --root ~/rust
           script:
               - cargo fmt -- --write-mode=diff
 
